@@ -29,11 +29,11 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-
+.env
 .eslintcache
 .vscode
 
 #file
 build
 public/img
-public/video/
+public/video
