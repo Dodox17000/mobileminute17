@@ -36,4 +36,4 @@ yarn-error.log*
 #file
 build
 public/img
-public/video
+public/video/
