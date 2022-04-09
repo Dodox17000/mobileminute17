@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mobileminute17.fr</loc>
+     <image:image>
+      <image:loc>https://mobileminute17.fr/img/reparation/téléphone.png</image:loc>
+        <image:caption>Réparation informatique</image:caption>
+     </image:image>
+     <image:image>
+      <image:loc>https://mobileminute17.fr/img/vente/smartphone.webp</image:loc>
+        <image:caption>Vente d'accessoires</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/vente/ordinateur-tablette.webp</image:loc>
+        <image:caption>Vente aux particuliers et professionnels</image:caption>
+    </image:image>
+          <image:loc>https://mobileminute17.fr/img/logo/logo_mm_ss.png</image:loc>
+        <image:caption>Reprise de vos appareils</image:caption>
+    </image:image>
+      <video:video>
+      <video:thumbnail_loc>
+         https://www.mobileminute17.fr/video/Site.mp4
+      </video:thumbnail_loc>
+      <video:title>
+         Mobile Minute 
+      </video:title>
+      <video:description>
+         Video du magasin Mobile Minute la Rochelle
+      </video:description>
+    </video:video>
+    <lastmod>2022-02-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
