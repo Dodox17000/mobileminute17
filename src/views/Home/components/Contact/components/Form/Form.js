@@ -56,7 +56,7 @@ const Form = () => {
     setAlertOpen(false);
   });
   const onSubmit = useCallback((values) => {
-    fetch('/quote.php', {
+    fetch('./quote.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

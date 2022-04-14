@@ -1,10 +1,10 @@
 {
   "name": "mobileminute17",
-  "homepage": "https://mobileminute.fr",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://mobileminute.fr",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "HTTPS=true react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "prettier:fix": "prettier './src/**/*.js' --write",
     "eslint:fix": "eslint ./src --fix",

@@ -1,6 +1,7 @@
 <?php
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
+  require 'vendor/autoload.php';
   $_POST = json_decode(file_get_contents('php://input'), true);
 
   if(isset($_POST['email']) && $_POST['email'] != ''){
@@ -14,10 +15,6 @@
     $msg .= "Message :<br /> " .  nl2br($_POST['message']) . "<br />";
     $msg .= "</body></html>";
     
-    require 'PHPMailer/Exception.php';
-    require 'PHPMailer/PHPMailer.php';
-    require 'PHPMailer/SMTP.php';
-    
     date_default_timezone_set("Europe/Paris"); 
     $mail             = new PHPMailer(); 
     $body             = $msg; 
@@ -28,15 +25,15 @@
     $mail->Host       = "mail.mobileminute17.fr";  
     $mail->Port       =  465;
     $mail->Username   = "postmaster@mobileminute17.fr";
-    $mail->Password   = "a#L90c0r";        
-    $mail->From       = "postamster@mobileminute17.fr"; //adresse d’envoi correspondant au login entré précédemment
+    $mail->Password   = "85Diroencuzoef795468zsiuhf";        
+    $mail->From       = "postmaster@mobileminute17.fr"; //adresse d’envoi correspondant au login entré précédemment
     $mail->FromName   = "MOBILE MINUTE"; // nom qui sera affiché
     $mail->Subject    = "Demande sur site mobileminute17.fr"; // sujet
     $mail->AltBody    = $msg;
     $mail->WordWrap   = 50; // nombre de caractères pour le retour à la ligne automatique
     $mail->MsgHTML($body); 
-    $mail->AddReplyTo("postmaster@mobileminute17","MOBILE MINUTE");
-    $mail->AddAddress("giustinadorine@gmail.com");
+    $mail->AddAddress("giustinadorine@gmail.com"); //adresse du detinataire
+    $mail->AddReplyTo("giustinadorine@gmail.com","MOBILE MINUTE");//réponse à un autre que l'expéditeur
     $mail->IsHTML(true); // envoyer au format html, passer a false si en mode texte 
     if(!$mail->Send()) {
       echo json_encode("Mailer Error: " . $mail->ErrorInfo);
