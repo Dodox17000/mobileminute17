@@ -1,6 +1,7 @@
 {
     "name": "mobileminute17",
     "short_name": "Mobile Minute",
+    "start_url": "https://mobileminute17.fr",
     "icons": [
         {
             "src": "img/icon/android-chrome-192x192.png",

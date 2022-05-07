@@ -1,4 +1,8 @@
 Options -MultiViews
+AddDefaultCharset UTF-8
 RewriteEngine On
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.html [QSA,L]
+RewriteRule . /index.html [QSA,L]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
