@@ -25,7 +25,7 @@ const VideoSection = () => {
     >
       <Box
         component={'video'}
-        poster="/img/boutique/boutique1.jpg"
+        poster="/img/boutique/webp/poster-video.webp"
         preload="auto"
         width={1}
         height={0.5}
