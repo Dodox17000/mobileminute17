@@ -2,7 +2,7 @@
   "name": "mobileminute17",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://mobileminute.fr",
+  "homepage": "https://mobileminute17.fr",
   "scripts": {
     "start": "HTTPS=true react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
