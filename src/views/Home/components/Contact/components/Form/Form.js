@@ -112,7 +112,8 @@ const Form = () => {
         <Grid item xs={12} md={12}>
           <Box component={LazyLoadComponent} width={1} height="100%" display="flex" alignItems="center">
             <Box padding={{ xs: 3, sm: 3 }} width={1} component={Card} boxShadow={1}>
-              <form autoComplete="on" ref={form} onSubmit={sendEmail}>
+              <form autoComplete="on" ref={form} onSubmit={sendEmail} >
+                {/* <form autoComplete="on" ref={form} onSubmit={formik.handleSubmit} > */}
                 <Grid item xs={12} md={12}>
                   <Box sx={{ display: 'flex', flexDirection: 'row' }}>
                     <Grid item xs={6} md={6}>
