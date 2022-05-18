@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useRef } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Box from '@mui/material/Box';
@@ -13,6 +13,9 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import emailjs from 'emailjs-com';
+
+
 
 const validationSchema = yup.object({
   firstName: yup
@@ -46,6 +49,20 @@ const validationSchema = yup.object({
 });
 
 const Form = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_9b8pu5b', 'template_6s1rxk4', form.current, '8ef_qaHr3yeb2EKiE')
+      .then((result) => {
+        console.log(result);
+        setAlertSeverity(result === 'ok' ? 'success' : 'error');
+      },(error) => {
+        setAlertSeverity(error);
+      });
+  };
+
   const [checked, setChecked] = useState(false);
   const [alertOpen, setAlertOpen] = useState(false);
   const [alertSeverity, setAlertSeverity] = useState('success');
@@ -95,7 +112,7 @@ const Form = () => {
         <Grid item xs={12} md={12}>
           <Box component={LazyLoadComponent} width={1} height="100%" display="flex" alignItems="center">
             <Box padding={{ xs: 3, sm: 3 }} width={1} component={Card} boxShadow={1}>
-              <form autoComplete="on" onSubmit={formik.handleSubmit}>
+              <form autoComplete="on" ref={form} onSubmit={sendEmail}>
                 <Grid item xs={12} md={12}>
                   <Box sx={{ display: 'flex', flexDirection: 'row' }}>
                     <Grid item xs={6} md={6}>
@@ -193,6 +210,7 @@ const Form = () => {
                       onChange={handleCheck}
                     />
                   </Box>
+                  <Box></Box>
                   <Box>
                     <Button
                       sx={{ height: 54 }}

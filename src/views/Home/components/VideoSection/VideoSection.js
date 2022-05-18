@@ -32,6 +32,7 @@ const VideoSection = () => {
         autoPlay={true}
         muted={true}
         loop={true}
+        playsInline
       >
         <source
           src="/video/Site.mp4"
