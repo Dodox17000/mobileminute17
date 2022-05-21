@@ -50,7 +50,7 @@ const Form = () => {
   const form = useRef();
   const [checked, setChecked] = useState(false);
   const [alertOpen, setAlertOpen] = useState(false);
-  const [alertSeverity, setAlertSeverity] = useState('success');
+  const [alertSeverity, setAlertSeverity] = useState('');
   const handleCheck = useCallback((event) => {
     setChecked(event.target.checked);
   }, []);
@@ -67,16 +67,23 @@ const Form = () => {
       message: '',
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
+    onSubmit: (values, { resetForm }) => {
       console.log('values', values);
+      //service_9b8pu5b
       emailjs.sendForm('service_9b8pu5b', 'template_6s1rxk4', form.current, '8ef_qaHr3yeb2EKiE')
         .then((result) => {
-          console.log(result);
-          setAlertSeverity(result === 'ok' ? 'success' : 'error');
+          if (result > 0) {
+            result = 'ok';
+          }
+          setAlertOpen(true);
+          setAlertSeverity(result === 'ok' ? 'error' : 'success');
         }, (error) => {
-          setAlertSeverity(error);
+          setAlertOpen(true);
+          setAlertSeverity('error');
+          console.log(error);
         });
-
+      //reset le formik
+      resetForm();
     },
   });
 
@@ -197,9 +204,9 @@ const Form = () => {
                     >
                       Envoyer
                     </Button>
-                    <Box>
+                    <Box sx={{display:'content', width:1}}>
                       <Button onClick={closeAlert}>
-                        <Snackbar autoHideDuration={4000} open={alertOpen}>
+                        <Snackbar sx={{ width: 1 , top: '0.5vw',display:'content', position:'relative', alignItems:'center'}} autoHideDuration={4000} open={alertOpen}>
                           <Alert severity={alertSeverity} sx={{ display: 'flex', width: 1 }}>
                             {alertSeverity === 'success'
                               ? 'Vous message a été envoyé avec succès !'
