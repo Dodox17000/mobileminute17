@@ -15,8 +15,6 @@ import Alert from '@mui/material/Alert';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import emailjs from 'emailjs-com';
 
-
-
 const validationSchema = yup.object({
   firstName: yup
     .string()
@@ -50,19 +48,6 @@ const validationSchema = yup.object({
 
 const Form = () => {
   const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_9b8pu5b', 'template_6s1rxk4', form.current, '8ef_qaHr3yeb2EKiE')
-      .then((result) => {
-        console.log(result);
-        setAlertSeverity(result === 'ok' ? 'success' : 'error');
-      },(error) => {
-        setAlertSeverity(error);
-      });
-  };
-
   const [checked, setChecked] = useState(false);
   const [alertOpen, setAlertOpen] = useState(false);
   const [alertSeverity, setAlertSeverity] = useState('success');
@@ -72,27 +57,6 @@ const Form = () => {
   const closeAlert = useCallback(() => {
     setAlertOpen(false);
   });
-  const onSubmit = useCallback((values) => {
-    fetch('./quote.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(values)
-    })
-      .then(response => response.json())
-      .then((data) => {
-        console.log(data);
-        setAlertSeverity(data === 'ok' ? 'success' : 'error');
-      })
-      .catch((error) => {
-        console.log(error);
-        setAlertSeverity('error');
-      })
-      .finally(() => {
-        setAlertOpen(true);
-      });
-  }, []);
 
   const formik = useFormik({
     initialValues: {
@@ -103,7 +67,17 @@ const Form = () => {
       message: '',
     },
     validationSchema: validationSchema,
-    onSubmit,
+    onSubmit: (values) => {
+      console.log('values', values);
+      emailjs.sendForm('service_9b8pu5b', 'template_6s1rxk4', form.current, '8ef_qaHr3yeb2EKiE')
+        .then((result) => {
+          console.log(result);
+          setAlertSeverity(result === 'ok' ? 'success' : 'error');
+        }, (error) => {
+          setAlertSeverity(error);
+        });
+
+    },
   });
 
   return (
@@ -112,8 +86,7 @@ const Form = () => {
         <Grid item xs={12} md={12}>
           <Box component={LazyLoadComponent} width={1} height="100%" display="flex" alignItems="center">
             <Box padding={{ xs: 3, sm: 3 }} width={1} component={Card} boxShadow={1}>
-              <form autoComplete="on" ref={form} onSubmit={sendEmail} >
-                {/* <form autoComplete="on" ref={form} onSubmit={formik.handleSubmit} > */}
+              <form autoComplete="on" ref={form} onSubmit={formik.handleSubmit} >
                 <Grid item xs={12} md={12}>
                   <Box sx={{ display: 'flex', flexDirection: 'row' }}>
                     <Grid item xs={6} md={6}>
