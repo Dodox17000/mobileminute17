@@ -193,6 +193,18 @@ const Form = () => {
                   </Box>
                   <Box></Box>
                   <Box>
+                    <Button onClick={closeAlert}>
+                      <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'bottom' }} autoHideDuration={4000} open={alertOpen}>
+                        <Alert severity={alertSeverity} sx={{ display: 'flex', width: 1 }}>
+                          {alertSeverity === 'success'
+                            ? 'Vous message a été envoyé avec succès !'
+                            : 'Un problème est survenu, veuillez réessayer plus tard !'
+                          }
+                        </Alert>
+                      </Snackbar>
+                    </Button>
+                  </Box>
+                  <Box>
                     <Button
                       sx={{ height: 54 }}
                       variant="contained"
@@ -204,18 +216,6 @@ const Form = () => {
                     >
                       Envoyer
                     </Button>
-                    <Box sx={{display:'content', width:1}}>
-                      <Button onClick={closeAlert}>
-                        <Snackbar sx={{ width: 1 , top: '0.5vw',display:'content', position:'relative', alignItems:'center'}} autoHideDuration={4000} open={alertOpen}>
-                          <Alert severity={alertSeverity} sx={{ display: 'flex', width: 1 }}>
-                            {alertSeverity === 'success'
-                              ? 'Vous message a été envoyé avec succès !'
-                              : 'Un problème est survenu, veuillez réessayer plus tard !'
-                            }
-                          </Alert>
-                        </Snackbar>
-                      </Button>
-                    </Box>
                   </Box>
                 </Box>
               </form>
