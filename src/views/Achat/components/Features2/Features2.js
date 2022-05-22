@@ -28,7 +28,7 @@ const Features2 = () => {
             src={
               mode === 'light'
                 ? '/img/reparation/cassé.jpg'
-                : '/img/reparation/cassé.jpg'
+                : '/img/reparation/webp/cassé.webp'
             }
             alt="Image Description"
             effect="blur"
