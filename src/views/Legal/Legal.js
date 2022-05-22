@@ -53,7 +53,7 @@ const Legal = () => {
               Edition du site internet
               </Typography>
               <Typography variant={'p'}>
-              Site web réalisé par <span><b>Dorine Giustina</b></span>
+              Site web réalisé par <span><b>Dorine Giustina</b> EI</span>
                 <br/>
                 <br/>
                 <b>Technology Center</b> tient à rappeler son engagement sur le respect de la confiance que vous lui accordez et à appliquer ainsi les obligations de la loi modifiée 78-17 du 6 janvier 1978 relative à « l’informatique, aux fichiers et aux libertés » selon la CNIL (Commission Nationale de l’Informatique et des Libertés): www.cnil.fr; 
