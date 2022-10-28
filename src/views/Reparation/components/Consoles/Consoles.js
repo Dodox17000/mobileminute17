@@ -1,14 +1,13 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { alpha, useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 import Image from 'components/Image';
 
-const Hero = () => {
+const Consoles = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -18,7 +17,7 @@ const Hero = () => {
     <Box>
       <Box marginBottom={2}>
         <Typography component={'span'} variant="h3" sx={{ fontWeight: 700 }}>
-          Retrouvez vos {' '}
+          Penser à {' '}
           <Typography
             component={'span'}
             variant={'inherit'}
@@ -30,15 +29,12 @@ const Hero = () => {
               )} 0%)`,
             }}
           >
-            Anciens Supports !
+            vos consoles de jeux !
           </Typography>
         </Typography>
       </Box>
       <Typography variant="h6" component="p" color={'text.secondary'}>
-        Mobile Minute vous propose le transfert et la numérisation de vos anciens supports vidéos même sur Bobines Super 8.
-      </Typography>
-      <Typography component="p" color={'text.secondary'}>
-        (Devis à effectuer au magasin)
+        Nous faisons la maintenance de vos consoles : changement de disque dur et pâte termique, nettoyage, ventilateur etc...
       </Typography>
       <Box
         display="flex"
@@ -47,11 +43,9 @@ const Hero = () => {
         marginTop={4}
       >
         {[
-          'img/marques/vhs.svg',
-          'img/marques/vhs-c.svg',
-          'img/marques/s-vhs.svg',
-          'img/marques/video8.svg',
-          'img/marques/hi8.svg',
+          'img/icon_site/nintendo.svg',
+          'img/icon_site/playstation.svg',
+          'img/icon_site/xbox.svg',
         ].map((item, i) => (
           <Box maxWidth={70} marginTop={2} marginRight={4} key={i}>
             <Image
@@ -60,14 +54,8 @@ const Hero = () => {
               width={1}
               src={item}
               webp={item}
-              alt="VHS VHS-C S-VHS Video 8 Hi-8"
-              title="VHS VHS-C S-VHS Video 8 Hi-8"
-              sx={{
-                filter:
-                  theme.palette.mode === 'dark'
-                    ? 'brightness(0) invert(0.7)'
-                    : 'contrast(0) brightness(0)',
-              }}
+              alt="marques de console"
+              title="marques de console"
             />
           </Box>
         ))}
@@ -77,11 +65,6 @@ const Hero = () => {
 
   return (
     <Grid container spacing={4}>
-      <Grid item container alignItems={'center'} xs={12} md={6}>
-        <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
-          <LeftSide />
-        </Box>
-      </Grid>
       <Grid item xs={12} md={6}>
         <Box
           sx={{
@@ -108,18 +91,23 @@ const Hero = () => {
                   component={LazyLoadImage}
                   height={1}
                   width={1}
-                  src={'img/illustration-home/cassette.png'}
-                  webp={'img/illustration-home/cassette.webp'}
-                  alt={'Image de support à convertir'}
-                  title={'Image de support à convertir'}
+                  src={'img/reparation/consoles.png'}
+                  webp={'img/reparation/webp/consoles.webp'}
+                  alt={'Consoles de jeux vidéo'}
+                  title={'Consoles de jeux vidé'}
                 />
               </Box>
             </Box>
           </Box>
         </Box>
       </Grid>
+      <Grid item container alignItems={'center'} xs={12} md={6}>
+        <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
+          <LeftSide />
+        </Box>
+      </Grid>
     </Grid>
   );
 };
 
-export default Hero;
+export default Consoles;

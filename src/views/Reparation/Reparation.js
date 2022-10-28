@@ -3,6 +3,7 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import Box from '@mui/material/Box';
 import {
+  Consoles,
   Features,
   Work,
   Solutions
@@ -23,11 +24,12 @@ const Reparation = () => {
             <Solutions />
           </Container>
         </Box>
-        <Box bgcolor={'alternate.main'}>
-          <Container>
-            <Work />
-          </Container>
-        </Box>
+        <Container bgcolor={'alternate.main'}>
+          <Work />
+        </Container>
+        <Container bgcolor={'alternate.main'}>
+          <Consoles />
+        </Container>
       </Main>
     </Suspense>
   );
