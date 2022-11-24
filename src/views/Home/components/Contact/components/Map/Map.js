@@ -31,7 +31,7 @@ const Map = () => {
           marginHeight={0}
           marginWidth={0}
           scrolling="no"
-          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d977.0534803639811!2d-1.1524261039700248!3d46.160212646330955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153ba76c023d9%3A0xd2e090b4baec86d8!2sMobile%20Minute!5e0!3m2!1sfr!2sfr!4v1644572142333!5m2!1sfr!2sfr'
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.5273521190834!2d-1.154464884568359!3d46.160157179115394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153ba76c023d9%3A0xd2e090b4baec86d8!2sMobile%20Minute!5e0!3m2!1sfr!2sfr!4v1669292827787!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"'
           style={{
             minHeight: 300,
             borderRadius: 8,

@@ -42,23 +42,17 @@ const Consoles = () => {
         justifyContent={'flex-start'}
         marginTop={4}
       >
-        {[
-          'img/icon_site/nintendo.svg',
-          'img/icon_site/playstation.svg',
-          'img/icon_site/xbox.svg',
-        ].map((item, i) => (
-          <Box maxWidth={70} marginTop={2} marginRight={4} key={i}>
-            <Image
-              component={LazyLoadImage}
-              height={1}
-              width={1}
-              src={item}
-              webp={item}
-              alt="marques de console"
-              title="marques de console"
-            />
-          </Box>
-        ))}
+        <Box maxWidth={70} marginTop={2} marginRight={4}>
+          <Image
+            component={LazyLoadImage}
+            height={1}
+            width={350}
+            src="img/icon_site/console-marque.svg"
+            webp="img/icon_site/console-marque.svg"
+            alt="marques de console"
+            title="marques de console"
+          />
+        </Box>
       </Box>
     </Box>
   );
