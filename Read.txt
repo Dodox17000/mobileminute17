@@ -1,8 +1,0 @@
-// package.json prod config
-  "homepage": "https://mobileminute17.fr",
-  "scripts": {
-    "start": "HTTPS=true react-scripts start",
-// package.json local config
-  "homepage": "/",
-  "scripts": {
-    "start": "react-scripts start",
