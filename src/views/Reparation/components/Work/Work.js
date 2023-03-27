@@ -39,7 +39,7 @@ const Work = () => {
 
   return (
     <Box>
-      <Grid container spacing={4}>
+      <Grid container>
         {mock.map((item, i) => (
           <Grid
             data-aos="fade-up"
@@ -50,7 +50,7 @@ const Work = () => {
             item
             container
             xs={12}
-            spacing={4}
+            spacing={0.5}
             direction={i % 2 === 1 ? 'row-reverse' : 'row'}
           >
             <Grid item container alignItems={'center'} xs={12} sm={6}>

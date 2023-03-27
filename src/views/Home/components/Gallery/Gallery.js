@@ -42,7 +42,7 @@ const Gallery = () => {
     },
     {
       src: '/img/boutique/boutique3.jpg',
-      webp: '/img/boutique/webp/boutique2.webp',
+      webp: '/img/boutique/webp/boutique3.webp',
       title: 'Image du magasin intérieur',
     },
   ];

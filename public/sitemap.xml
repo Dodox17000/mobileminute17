@@ -2,22 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mobileminute17.fr</loc>
-     <image:image>
-      <image:loc>https://mobileminute17.fr/img/reparation/téléphone.png</image:loc>
-        <image:caption>Réparation informatique</image:caption>
-     </image:image>
-     <image:image>
-      <image:loc>https://mobileminute17.fr/img/vente/smartphone.webp</image:loc>
-        <image:caption>Vente d'accessoires</image:caption>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/boutique/webp/poster-video.webp</image:loc>
+      <image:caption>Magasin Mobile Minute</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://mobileminute17.fr/img/vente/ordinateur-tablette.webp</image:loc>
-        <image:caption>Vente aux particuliers et professionnels</image:caption>
+      <image:loc>https://mobileminute17.fr/img/boutique/webp/boutique1.webp</image:loc>
+      <image:caption>Magasin Mobile Minute</image:caption>
     </image:image>
-          <image:loc>https://mobileminute17.fr/img/logo/logo_mm_ss.png</image:loc>
-        <image:caption>Reprise de vos appareils</image:caption>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/boutique/webp/boutique3.webp</image:loc>
+      <image:caption>Magasin Mobile Minute</image:caption>
     </image:image>
-      <video:video>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/boutique/webp/boutique2.webp</image:loc>
+      <image:caption>Vente aux particuliers et professionnels</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/logo/logo_mm_ss.png</image:loc>
+      <image:caption>Logo Mobile Minute</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/logo/webp/logo_mm_ss.webp</image:loc>
+      <image:caption>Logo Mobile Minute Simple</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/logo/webp/logo_mm_e.webp</image:loc>
+      <image:caption>Logo Mobile Minute</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/logo/webp/logo_m_bleu.webp</image:loc>
+      <image:caption>Logo Mobile Minute M</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/illustration-home/smartphone.webp</image:loc>
+      <image:caption>Vente téléphone</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/illustration-home/ordinateur-tablette.webp</image:loc>
+      <image:caption>Vente Tablette</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/illustration-home/smartphone2.webp</image:loc>
+      <image:caption>Vente Smartphone</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/illustration-home/mac.webp</image:loc>
+      <image:caption>Vente Mac</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/icon_site/webp/mondial-relay.webp</image:loc>
+      <image:caption>Retrait Envoie Mondiale Relay</image:caption>
+    </image:image>
+    <video:video>
       <video:thumbnail_loc>
          https://www.mobileminute17.fr/video/Site.mp4
       </video:thumbnail_loc>
@@ -28,8 +65,132 @@
          Video du magasin Mobile Minute la Rochelle
       </video:description>
     </video:video>
+    <video:video>
+      <video:thumbnail_loc>
+         https://www.mobileminute17.fr/video/Site.webm
+      </video:thumbnail_loc>
+      <video:title>
+         Mobile Minute 
+      </video:title>
+      <video:description>
+         Video du magasin Mobile Minute la Rochelle
+      </video:description>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>
+         https://www.mobileminute17.fr/video/Site.mov
+      </video:thumbnail_loc>
+      <video:title>
+         Mobile Minute 
+      </video:title>
+      <video:description>
+         Video du magasin Mobile Minute la Rochelle
+      </video:description>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>
+         https://www.mobileminute17.fr/video/Site.ogg
+      </video:thumbnail_loc>
+      <video:title>
+         Mobile Minute 
+      </video:title>
+      <video:description>
+         Video du magasin Mobile Minute la Rochelle
+      </video:description>
+    </video:video>
     <lastmod>2022-02-11</lastmod>
-    <changefreq>yearly</changefreq>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mobileminute17.fr/reparation</loc>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/reparation/téléphone.png</image:loc>
+      <image:caption>Réparation téléphone</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/reparation/webp/ordinateur.webp</image:loc>
+      <image:caption>Réparation informatique</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/reparation/webp/tablette.webp</image:loc>
+      <image:caption>Reprise de vos appareils</image:caption>
+    </image:image>
+    <lastmod>2022-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <url>
+    <loc>https://mobileminute17.fr/reprise</loc> 
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/number/tab.webp</image:loc>
+      <image:caption>Reprise tablette</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/number/mac.webp</image:loc>
+      <image:caption>Reprise mac</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/number/pc.webp</image:loc>
+      <image:caption>Reprise ordinateur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/number/smart.webp</image:loc>
+      <image:caption>Reprise téléphone</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/illustration-home/reprise.jpg</image:loc>
+      <image:caption>Reprise Cash</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/number/recycle.webp</image:loc>
+      <image:caption>Reprise téléphone</image:caption>
+    </image:image>
+    <lastmod>2022-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mobileminute17.fr/vente</loc>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/illustration-home/cassette.webp</image:loc>
+      <image:caption>Conversion Cassette</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/reparation/webp/cassé.webp</image:loc>
+      <image:caption>Réparation écran</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/accessoire/webp/compo2.webp</image:loc>
+      <image:caption>Accessoires</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/accessoire/webp/batterie.webp</image:loc>
+      <image:caption>Vente Batterie</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/webp/accessoire/housse.webp</image:loc>
+      <image:caption>Vente Housse</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/accessoire/webp/clavier.webp</image:loc>
+      <image:caption>Vente Clavier Souris</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/accessoire/webp/câbles.webp</image:loc>
+      <image:caption>Vente Cable</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/accessoire/webp/audio.webp</image:loc>
+      <image:caption>Vente Casque Audio et écouteur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mobileminute17.fr/img/illustration-home/gamme.webp</image:loc>
+      <image:caption>Vente Smartphone</image:caption>
+    </image:image>
+    <lastmod>2022-02-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 </urlset>

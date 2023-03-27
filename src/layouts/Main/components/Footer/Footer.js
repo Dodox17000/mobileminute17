@@ -44,32 +44,63 @@ const Footer = () => {
               />
             </Button>
           </Tooltip>
-          <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
+          <Box alignItems={'center'}>
             <Box
-              display={'flex'}
               component="a"
-              href="/"
+              display={'flex'}
+              target='_blank'
+              href="https://www.oney.fr/paiement/3x4x"
               width={1}
             >
               <Box
                 component={'img'}
                 src={
                   mode === 'light'
-                    ? 'img/logo/logo_mm_ss.svg'
-                    : 'img/logo/logo_mm_ss_blanc.svg'
+                    ? 'img/icon_site/oney.svg'
+                    : 'img/icon_site/oney_blanc.svg'
                 }
                 webp={mode === 'light'
-                  ? 'img/logo/webp/logo_mm_ss.webp'
-                  : 'img/logo/webp/logo_mm_ss_blanc.webp'
+                  ? 'img/icon_site/webp/oney.webp'
+                  : 'img/icon_site/webp/oney_blanc.webp'
                 }
-                alt='Mobile Minute'
-                title='Mobile Minute'
+                alt='Oney'
+                title='Oney'
                 sx={{
+                  alignItems: 'right',
                   height: 'auto',
-                  width: 350
+                  width: 300
                 }}
               />
             </Box>
+          </Box>
+        </Box>
+      </Grid>
+      <Grid item align={'center'} xs={12} md={12}>
+        <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
+          <Box
+            component="a"
+            href="/"
+            width={1}
+          >
+            <Box
+              component={'img'}
+              src={
+                mode === 'light'
+                  ? 'img/logo/logo_mm_ss.svg'
+                  : 'img/logo/logo_mm_ss_blanc.svg'
+              }
+              webp={mode === 'light'
+                ? 'img/logo/webp/logo_mm_ss.webp'
+                : 'img/logo/webp/logo_mm_ss_blanc.webp'
+              }
+              alt='Mobile Minute'
+              title='Mobile Minute'
+              sx={{
+                justifyContent:'center',
+                height: 'auto',
+                width: 300
+              }}
+            />
           </Box>
         </Box>
       </Grid>

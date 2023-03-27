@@ -34,7 +34,7 @@ const Features = () => {
           <Grid container spacing={1}>
             {[
               'La protection contre les rayures',
-              'La pimitation des traces de doigts et d\'impacts',
+              'La limitation des traces de doigts et d\'impacts',
               'D\'éviter le coût d’une réparation d’écran ou autres composants',
               'De préserver sa valeur ',
             ].map((item, i) => (
@@ -89,7 +89,7 @@ const Features = () => {
             src={
               mode === 'light'
                 ? '/img/accessoire/compo2.png'
-                : '/img/accessoire/compo2.png'
+                : '/img/accessoire/webp/compo2.webp'
             }
             alt="Image Composition d'accessoire"
             title="Image Composition d'accessoire"

@@ -69,7 +69,7 @@ const Features = () => {
           align={'center'}
           sx={{ fontWeight: 700 }}
         >
-          Téléphones, Ordinateurs, Tablettes
+          Téléphones, Ordinateurs, Tablettes, Consoles
         </Typography>
         <Typography
           variant={'h6'}

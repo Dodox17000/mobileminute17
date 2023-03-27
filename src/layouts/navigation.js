@@ -18,7 +18,7 @@ const pages = {
     },
     {
       title: 'Achat',
-      href: '/rachat',
+      href: '/reprise',
     },
   ],
   secondary: [

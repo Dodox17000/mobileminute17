@@ -40,7 +40,7 @@ const Solutions = () => {
   });
 
   return (
-    <Box sx={{marginTop:'5rem'}}>
+    <Box sx={{marginTop:'4rem'}}>
       <Box marginBottom={8}>
         <Typography
           sx={{
