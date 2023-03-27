@@ -69,7 +69,7 @@ const Form = () => {
     validationSchema: validationSchema,
     onSubmit: (values, { resetForm }) => {
       console.log('values', values);
-      emailjs.sendForm('your-service_id', 'your-template_id', form.current, 'your-public_key')
+      emailjs.sendForm('service_9b8pu5b', 'template_6s1rxk4', form.current, '8ef_qaHr3yeb2EKiE')
         .then((result) => {
           if (result > 0) {
             result = 'ok';
